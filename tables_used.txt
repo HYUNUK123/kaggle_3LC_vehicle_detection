@@ -1,0 +1,2 @@
+train_url=C:/Users/Hyunuk/AppData/Local/3LC/3LC/projects/ua_detrac_vehicle_detection/datasets/ua_detrac_10k/tables/ua_detrac_10k-train-dedup-99
+val_url=C:/Users/Hyunuk/AppData/Local/3LC/3LC/projects/ua_detrac_vehicle_detection/datasets/ua_detrac_10k/tables/ua_detrac_10k-val

@@ -1,0 +1,502 @@
+Epoch 5 mAP50-95 0.276
+Epoch 10 mAP50-95 0.499
+Epoch 20 mAP50-95 0.594
+Epoch 30 mAP50-95 0.633
+Epoch 40 mAP50-95 0.644
+Epoch 50 mAP50-95 0.65
+
+기본값일 때
+Epoch 5 mAP50-95 0.316
+Epoch 10 mAP50-95 0.509
+
+A.MotionBlur(blur_limit=(3, 5), p=0.2) 만 추가
+Epoch 5 mAP50-95 0.327
+Epoch 10 mAP50-95 0.521
+Epoch 20 mAP50-95 0.596
+Epoch 30 mAP50-95 0.638
+Epoch 40 mAP50-95 0.651
+Epoch 50 mAP50-95 0.652
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: true, weight_decay: 0.0005
+Epoch 5 mAP50-95 0.502
+Epoch 10 mAP50-95 0.612
+Epoch 20 mAP50-95 0.645
+Epoch 30 mAP50-95 0.673
+Epoch 40 mAP50-95 0.688
+Epoch 50 mAP50-95 0.688 40에폭 이후에는 개선이 잘 안됨
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.01
+Epoch 5 mAP50-95 0.52
+Epoch 10 mAP50-95 0.619
+Epoch 20 mAP50-95 0.649
+Epoch 30 mAP50-95 0.673
+Epoch 40 mAP50-95 0.688
+Epoch 50 mAP50-95 0.694
+all 0.694 truck 0.685 car 0.707 van 0.64
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.005
+Epoch 5 mAP50-95 0.545
+Epoch 10 mAP50-95 0.603
+Epoch 20 mAP50-95 0.65
+Epoch 30 mAP50-95 0.674
+Epoch 40 mAP50-95 0.687
+Epoch 50 mAP50-95 0.69
+all 0.691 truck 0.665 car 0.709 van 0.638
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: true, weight_decay: 0.01
+Epoch 5 mAP50-95 0.529
+Epoch 10 mAP50-95 0.608
+Epoch 20 mAP50-95 0.636
+Epoch 30 mAP50-95 0.676
+Epoch 40 mAP50-95 0.682
+Epoch 50 mAP50-95 0.685
+all 0.69 truck 0.671 car 0.708 van 0.635 bus 0.748
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.01, box: 10.0
+Epoch 5 mAP50-95 0.519
+Epoch 10 mAP50-95 0.585
+Epoch 20 mAP50-95 0.657
+Epoch 30 mAP50-95 0.67
+Epoch 40 mAP50-95 0.683
+Epoch 50 mAP50-95 0.683
+all 0.685 truck 0.652 car 0.709 van 0.634 bus 0.745
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.01, dfl: 2.0
+Epoch 5 mAP50-95 0.539
+Epoch 10 mAP50-95 0.606
+Epoch 20 mAP50-95 0.658
+Epoch 30 mAP50-95 0.678
+Epoch 40 mAP50-95 0.693
+Epoch 50 mAP50-95 0.693
+all 0.697 truck 0.682 car 0.713 van 0.655 bus 0.74
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.01, box: 10.0, dfl: 2.0
+Epoch 5 mAP50-95 0.516
+Epoch 10 mAP50-95 0.597
+Epoch 20 mAP50-95 0.658
+Epoch 30 mAP50-95 0.684
+Epoch 40 mAP50-95 0.695
+Epoch 50 mAP50-95 0.695
+all 0.696 truck 0.688 car 0.71 van 0.643 bus 0.741
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.01, dfl: 2.5
+Epoch 5 mAP50-95 0.532
+Epoch 10 mAP50-95 0.604
+Epoch 20 mAP50-95 0.652
+Epoch 30 mAP50-95 0.678
+Epoch 40 mAP50-95 0.69
+Epoch 50 mAP50-95 0.694
+all 0.695 truck 0.676 car 0.711 van 0.645 bus 0.749
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.0005
+Epoch 5 mAP50-95 0.51
+Epoch 10 mAP50-95 0.59
+Epoch 20 mAP50-95 0.66
+Epoch 30 mAP50-95 0.676
+Epoch 40 mAP50-95 0.688
+Epoch 50 mAP50-95 0.694
+all 0.693 truck 0.679 car 0.705 van 0.639 bus 0.749
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.0005, cos_lr: True
+Epoch 5 mAP50-95 0.512
+Epoch 10 mAP50-95 0.587
+Epoch 20 mAP50-95 0.659
+Epoch 30 mAP50-95 0.678
+Epoch 40 mAP50-95 0.689
+Epoch 50 mAP50-95 0.691
+all 0.692 truck 0.669 car 0.708 van 0.639 bus 0.751
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.354
+Epoch 10 mAP50-95 0.541
+Epoch 20 mAP50-95 0.606
+Epoch 30 mAP50-95 0.65
+Epoch 40 mAP50-95 0.658
+Epoch 50 mAP50-95 0.666
+all 0.675 truck 0.652 car 0.698 van 0.642 bus 0.708 -> kaggle에서 3번째로 가장 성능 좋음
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.0005, 유사도 0.98이상 제거
+Epoch 5 mAP50-95 0.345
+Epoch 10 mAP50-95 0.494
+Epoch 20 mAP50-95 0.579
+Epoch 30 mAP50-95 0.611
+Epoch 40 mAP50-95 0.642
+Epoch 50 mAP50-95 0.654
+all 0.655 truck 0.632 car 0.68 van 0.614 bus 0.696
+
+기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.0005, 유사도 0.995이상 제거
+Epoch 5 mAP50-95 0.47
+Epoch 10 mAP50-95 0.545
+Epoch 20 mAP50-95 0.642
+Epoch 30 mAP50-95 0.655
+Epoch 40 mAP50-95 0.664
+Epoch 50 mAP50-95 0.673
+all 0.676 truck  car 0.701 van 0.642 bus 0.721
+
+100epoch기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.417
+Epoch 10 mAP50-95 0.541
+Epoch 20 mAP50-95 0.597
+Epoch 30 mAP50-95 0.646
+Epoch 40 mAP50-95 0.657
+Epoch 50 mAP50-95 0.656
+Epoch 60 mAP50-95 0.67
+Epoch 70 mAP50-95 0.68
+Epoch 80 mAP50-95 0.68
+Epoch 90 mAP50-95 0.68
+Epoch 100 mAP50-950.685
+all 0.686 truck 0.647 car 0.706 van 0.656 bus 0.734
+
+100epoch기본 코드에 AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.01, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.416
+Epoch 10 mAP50-95 0.532
+Epoch 20 mAP50-95 0.613
+Epoch 30 mAP50-95 0.639
+Epoch 40 mAP50-95 0.661
+Epoch 50 mAP50-95 0.664
+Epoch 60 mAP50-95 0.673
+Epoch 70 mAP50-95 0.68
+Epoch 80 mAP50-95 0.686
+Epoch 90 mAP50-95 0.684
+Epoch 100 mAP50-95 0.689
+all 0.689 truck 0.653 car 0.708 van 0.661 bus 0.733
+
+150epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.369
+Epoch 10 mAP50-95 0.554
+Epoch 20 mAP50-95 0.588
+Epoch 30 mAP50-95 0.632
+Epoch 40 mAP50-95 0.653
+Epoch 50 mAP50-95 0.655
+Epoch 60 mAP50-95 0.677
+Epoch 70 mAP50-95 0.689
+Epoch 80 mAP50-95 0.69
+Epoch 90 mAP50-95 0.685
+Epoch 100 mAP50-95 0.687
+Epoch 110 mAP50-95 0.69
+Epoch 120 mAP50-95 0.691
+Epoch 130 mAP50-95 0.698
+Epoch 140 mAP50-95 0.698
+Epoch 150 mAP50-95 0.699
+all 0.699 truck 0.655 car 0.723 van 0.673 bus 0.747
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.383
+Epoch 10 mAP50-95 0.548
+Epoch 20 mAP50-95 0.596
+Epoch 30 mAP50-95 0.642
+Epoch 40 mAP50-95 0.655
+Epoch 50 mAP50-95 0.664
+Epoch 60 mAP50-95 0.672
+Epoch 70 mAP50-95 0.685
+Epoch 80 mAP50-95 0.687
+Epoch 90 mAP50-95 0.688
+Epoch 100 mAP50-95 0.688
+all 0.692 truck 0.663 car 0.713 van 0.671 bus 0. -> kaggle에서 2번째로 가장 성능 좋음
+boxes 39320
+
+90epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.409
+Epoch 10 mAP50-95 0.541
+Epoch 20 mAP50-95 0.603
+Epoch 30 mAP50-95 0.612
+Epoch 40 mAP50-95 0.668
+Epoch 50 mAP50-95 0.668
+Epoch 60 mAP50-95 0.68
+Epoch 70 mAP50-95 0.687
+Epoch 80 mAP50-95 0.683
+Epoch 90 mAP50-95 0.69
+all 0.693 truck 0.66 car 0.713 van 0.673 bus 0.728
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.992이상 제거
+Epoch 5 mAP50-95 0.397
+Epoch 10 mAP50-95 0.54
+Epoch 20 mAP50-95 0.621
+Epoch 30 mAP50-95 0.643
+Epoch 40 mAP50-95 0.663
+Epoch 50 mAP50-95 0.676
+Epoch 60 mAP50-95 0.683
+Epoch 70 mAP50-95 0.687
+Epoch 80 mAP50-95 0.695
+Epoch 90 mAP50-95 0.699
+Epoch 100 mAP50-95 0.697
+all 0.699 truck 0.669 car 0.719 van 0.672 bus 0.
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.989이상 제거
+Epoch 5 mAP50-95 0.394
+Epoch 10 mAP50-95 0.537
+Epoch 20 mAP50-95 0.61
+Epoch 30 mAP50-95 0.647
+Epoch 40 mAP50-95 0.655
+Epoch 50 mAP50-95 0.669
+Epoch 60 mAP50-95 0.676
+Epoch 70 mAP50-95 0.668
+Epoch 80 mAP50-95 0.677
+Epoch 90 mAP50-95 0.678
+Epoch 100 mAP50-95 0.688
+all 0.688 truck 0.65 car 0.712 van 0.664 bus 0.727
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.991이상 제거
+Epoch 5 mAP50-95 0.398
+Epoch 10 mAP50-95 0.554
+Epoch 20 mAP50-95 0.613
+Epoch 30 mAP50-95 0.644
+Epoch 40 mAP50-95 0.659
+Epoch 50 mAP50-95 0.689
+Epoch 60 mAP50-95 0.68
+Epoch 70 mAP50-95 0.693
+Epoch 80 mAP50-95 0.691
+Epoch 90 mAP50-95 0.697
+Epoch 100 mAP50-95 0.695
+all 0.99 truck 0.686 car 0.721 van 0.667 bus 0.
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.987이상 제거(임베딩 128x128)
+Epoch 5 mAP50-95 0.395
+Epoch 10 mAP50-95 0.553
+Epoch 20 mAP50-95 0.631
+Epoch 30 mAP50-95 0.644
+Epoch 40 mAP50-95 0.663
+Epoch 50 mAP50-95 0.674
+Epoch 60 mAP50-95 0.687
+Epoch 70 mAP50-95 0.687
+Epoch 80 mAP50-95 0.69
+Epoch 90 mAP50-95 0.685
+Epoch 100 mAP50-95 0.689
+all 0.691 truck 0.669 car 0.714 van 0.66 bus 0.
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.988이상 제거(임베딩 128x128)
+Epoch 5 mAP50-95 0.429
+Epoch 10 mAP50-95 0.532
+Epoch 20 mAP50-95 0.607
+Epoch 30 mAP50-95 0.654
+Epoch 40 mAP50-95 0.663
+Epoch 50 mAP50-95 0.672
+Epoch 60 mAP50-95 0.69
+Epoch 70 mAP50-95 0.679
+Epoch 80 mAP50-95 0.686
+Epoch 90 mAP50-95 0.694
+Epoch 100 mAP50-95 0.692
+all 0.695 truck 0.657 car 0.718 van 0.674 bus 0.73
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, 원본이미지 안에 copy_paste truck 4 van 2
+Epoch 5 mAP50-95 0.511
+Epoch 10 mAP50-95 0.581
+Epoch 20 mAP50-95 0.661
+Epoch 30 mAP50-95 0.676
+Epoch 40 mAP50-95 0.694
+Epoch 50 mAP50-95 0.692
+Epoch 60 mAP50-95 0.701
+Epoch 70 mAP50-95 0.706
+Epoch 80 mAP50-95 0.705
+Epoch 90 mAP50-95 0.706
+Epoch 100 mAP50-95 0.708
+all 0.708 truck 0.684 car 0.724 van 0.666 bus 0.759
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, 원본이미지 안에 copy_paste truck 2
+Epoch 5 mAP50-95 0.452
+Epoch 10 mAP50-95 0.576
+Epoch 20 mAP50-95 0.64
+Epoch 30 mAP50-95 0.659
+Epoch 40 mAP50-95 0.675
+Epoch 50 mAP50-95 0.675
+Epoch 60 mAP50-95 0.684
+Epoch 70 mAP50-95 0.687
+Epoch 80 mAP50-95 0.696
+Epoch 90 mAP50-95 0.695
+Epoch 100 mAP50-95 0.699
+all 0.7 truck 0.675 car 0.717 van 0.674 bus 0.733
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, 원본이미지 안에 copy_paste truck 5
+Epoch 5 mAP50-95 0.498
+Epoch 10 mAP50-95 0.608
+Epoch 20 mAP50-95 0.659
+Epoch 30 mAP50-95 0.669
+Epoch 40 mAP50-95 0.688
+Epoch 50 mAP50-95 0.7
+Epoch 60 mAP50-95 0.697
+Epoch 70 mAP50-95 0.701
+Epoch 80 mAP50-95 0.697
+Epoch 90 mAP50-95 0.697
+Epoch 100 mAP50-95 0.703
+all 0.703 truck 0.689 car 0.724 van 0.667 bus 0.733
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, 원본이미지 안에 copy_paste truck 3 van 2
+Epoch 5 mAP50-95 0.5
+Epoch 10 mAP50-95 0.622
+Epoch 20 mAP50-95 0.678
+Epoch 30 mAP50-95 0.688
+Epoch 40 mAP50-95 0.689
+Epoch 50 mAP50-95 0.695
+Epoch 60 mAP50-95 0.696
+Epoch 70 mAP50-95 0.704
+Epoch 80 mAP50-95 0.701
+Epoch 90 mAP50-95 0.702
+Epoch 100 mAP50-95 0.703
+all 0.703 truck 0.689 car 0.724 van 0.667 bus 0.733
+
+100epoch기본 코드에 SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.986이상 제거(임베딩 128x128)
+Epoch 5 mAP50-95 0.399
+Epoch 10 mAP50-95 0.546
+Epoch 20 mAP50-95 0.612
+Epoch 30 mAP50-95 0.637
+Epoch 40 mAP50-95 0.668
+Epoch 50 mAP50-95 0.678
+Epoch 60 mAP50-95 0.677
+Epoch 70 mAP50-95 0.685
+Epoch 80 mAP50-95 0.686
+Epoch 90 mAP50-95 0.692
+Epoch 100 mAP50-95 0.691
+all 0.697 truck 0.671 car 0.719 van 0.675 bus 0.724
+
+100epoch기본 코드에 optimizer : 'auto' (MuSGD, learning_rate 0.00125, momentum=0.9) use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, dropout: 0.1
+Epoch 5 mAP50-95 0.213
+Epoch 10 mAP50-95 0.44
+Epoch 20 mAP50-95 0.549
+Epoch 30 mAP50-95 0.598
+Epoch 40 mAP50-95 0.624
+Epoch 50 mAP50-95 0.645
+Epoch 60 mAP50-95 0.654
+Epoch 70 mAP50-95 0.66
+Epoch 80 mAP50-95 0.663
+Epoch 90 mAP50-95 0.662
+Epoch 100 mAP50-95 0.662
+all 0.665 truck 0.624 car 0.695 van 0.634 bus 0.706
+
+80epoch기본 코드에 optimizer : 'auto' (MuSGD, learning_rate 0.00125, momentum=0.9) use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.206
+Epoch 10 mAP50-95 0.416
+Epoch 20 mAP50-95 0.558
+Epoch 30 mAP50-95 0.605
+Epoch 40 mAP50-95 0.628
+Epoch 50 mAP50-95 0.642
+Epoch 60 mAP50-95 0.648
+Epoch 70 mAP50-95 0.656
+Epoch 80 mAP50-95 0.658
+all 0.658 truck 0.619 car 0.688 van 0.624 bus 0.699
+
+80epoch기본 코드에 optimizer : MuSGD, learning_rate 0.002, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.34
+Epoch 10 mAP50-95 0.506
+Epoch 20 mAP50-95 0.606
+Epoch 30 mAP50-95 0.633
+Epoch 40 mAP50-95 0.652
+Epoch 50 mAP50-95 0.662
+Epoch 60 mAP50-95 0.669
+Epoch 70 mAP50-95 0.674
+Epoch 80 mAP50-95 0.679
+all 0.679 truck 0.663 car 0.697 van 0.636 bus 0.72
+boxes 42660  0.82588
+
+100epoch기본 코드에 optimizer : MuSGD, learning_rate 0.005, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.469
+Epoch 10 mAP50-95 0.587
+Epoch 20 mAP50-95 0.639
+Epoch 30 mAP50-95 0.662
+Epoch 40 mAP50-95 0.672
+Epoch 50 mAP50-95 0.68
+Epoch 60 mAP50-95 0.677
+Epoch 70 mAP50-95 0.691
+Epoch 80 mAP50-95 0.691
+Epoch 90 mAP50-95 0.689
+Epoch 92 mAP50-95 0.692  best epoch 72 mAP50-95 0.698
+all 0.694 truck 0.656 car 0.713 van 0.673 bus 0.735
+boxes 34861  0.81719
+
+100epoch기본 코드에 optimizer : MuSGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.481
+Epoch 10 mAP50-95 0.587
+Epoch 20 mAP50-95 0.646
+Epoch 30 mAP50-95 0.657
+Epoch 40 mAP50-95 0.668
+Epoch 50 mAP50-95 0.672
+Epoch 60 mAP50-95 0.684
+Epoch 70 mAP50-95 0.697
+Epoch 80 mAP50-95 0.7
+Epoch 90 mAP50-95 0.701
+Epoch 100 mAP50-95 0.705
+all 0.706 truck 0.682 car 0.719 van 0.67 bus 0.753
+boxes 28891  0.80412
+
+100epoch기본 코드에 optimizer : SGD, learning_rate 0.02, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.423
+Epoch 10 mAP50-95 0.562
+Epoch 20 mAP50-95 0.615
+Epoch 30 mAP50-95 0.643
+Epoch 40 mAP50-95 0.656
+Epoch 50 mAP50-95 0.673
+Epoch 60 mAP50-95 0.677
+Epoch 70 mAP50-95 0.686
+Epoch 80 mAP50-95 0.688
+Epoch 90 mAP50-95 0.691
+Epoch 100 mAP50-95 0.695
+all 0.701 truck 0.688 car 0.72 van 0.667 bus 0.731
+boxes 34315
+
+80epoch기본 코드에 optimizer : MuSGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+all 0.704 truck 0.681 car 0.718 van 0.674 bus 0.745
+boxes 27384
+
+100epoch기본 코드에 optimizer : MuSGD, learning_rate 0.0025, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거
+Epoch 5 mAP50-95 0.359
+Epoch 10 mAP50-95 0.554
+Epoch 20 mAP50-95 0.616
+Epoch 30 mAP50-95 0.641
+Epoch 40 mAP50-95 0.663
+Epoch 50 mAP50-95 0.663
+Epoch 60 mAP50-95 0.681
+Epoch 70 mAP50-95 0.679
+Epoch 80 mAP50-95 0.687
+Epoch 90 mAP50-95 0.683
+Epoch 100 mAP50-95 0.683
+all 0.687 truck 0.648 car 0.709 van 0.666 bus 0.726
+boxes 37574
+
+300epoch기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, patience 50
+all 0.715 truck 0.697 car 0.724 van 0.68 bus 0.758
+
+100epoch기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, kaggle코드 데이터증강
+Epoch 5 mAP50-95 0.215
+Epoch 10 mAP50-95 0.484
+Epoch 20 mAP50-95 0.564
+Epoch 30 mAP50-95 0.605
+Epoch 40 mAP50-95 0.626
+Epoch 50 mAP50-95 0.648
+Epoch 60 mAP50-95 0.655
+Epoch 70 mAP50-95 0.659
+Epoch 80 mAP50-95 0.666
+Epoch 90 mAP50-95 0.67
+Epoch 100 mAP50-95 0.675
+all 0.677 truck 0.637 car 0.704 van 0.655 bus 0.714
+boxes 38656 -> kaggle에서 3번째로 가장 성능 좋음
+
+100epoch기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, kaggle코드 데이터증강, mAP50 기준으로 earlystopping
+Epoch 85에서 끝남. best epoch : Epoch 65 -> mAP50 : 0.846
+boxes 64871 -> kaggle에서 4번째로 가장 성능 좋음
+
+100epoch기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, cls: 0.6
+Epoch 49에서 끝남. best epoch : Epoch 29 -> mAP50 : 0.847
+boxes 58840
+
+300epoch patience50 기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, 데이터증강, cls: 0.7
+Epoch 103에서 끝남. best epoch : Epoch 53 -> mAP50 : 0.855
+boxes 54502 -> kaggle에서 2번째로 가장 성능 좋음
+
+300epoch patience50 기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, 데이터증강, cls: 1.0
+Epoch 111에서 끝남. best epoch : Epoch 61 -> mAP50 : 0.853
+boxes 45806 -> kaggle에서 가장 성능 좋음
+
+300epoch patience40 기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, 데이터증강, cls: 0.8
+Epoch 116에서 끝남. best epoch : Epoch 76 -> mAP50 : 0.849
+
+100epoch patience40 기본 코드에 optimizer : AdamW, learning_rate 0.001, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, 데이터증강, cls: 0.7
+Epoch 65에서 끝남. best epoch : Epoch 25 -> mAP50 : 0.845
+
+300epoch patience40 기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, 데이터증강, cls: 1.5
+Epoch 107에서 끝남. best epoch : Epoch 67 -> mAP50 : 0.858
+boxes 45140 -> kaggle에서 가장 성능 좋음
+
+300epoch patience50 기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, 데이터증강, cls: 2.0
+Epoch 에서 끝남. best epoch : Epoch 62 -> mAP50 : 0.844  중간에 끊음
+
+300epoch patience50 기본 코드에 optimizer : SGD, learning_rate 0.01, use_augmentation: false, weight_decay: 0.0005, 유사도 0.99이상 제거, mAP50 기준으로 earlystopping, 데이터증강, cls: 1.7
+Epoch 103에서 끝남. best epoch : Epoch 53 -> mAP50 : 0.847  중간에 끊음
